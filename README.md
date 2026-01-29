@@ -40,7 +40,7 @@ Suggests an attempt to extract credentials from memory — a critical attack sta
 
 ###  Medium Severity
 **Execution from AppData Directory**  
-Malware often runs from user-writable locations to evade detection.
+Malware often runs from user writable locations to evade detection.
 
 **Suspicious Persistence via Scheduled Task**  
 Indicates the attacker attempted to maintain access after reboot.
@@ -71,7 +71,7 @@ Enriches investigations by labelling known malicious files and behaviours.
 
 ##  Analyst Takeaways
 - Legitimate Windows processes can be abused or mimicked by attackers.
-- Execution location matters — **Temp and AppData directories are red flags**.
+- Execution location matters **Temp and AppData directories are red flags**.
 - Alerts must be correlated rather than investigated in isolation.
 - EDR provides visibility across the **entire attack lifecycle**, not just initial access.
 
