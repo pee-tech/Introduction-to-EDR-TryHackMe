@@ -3,7 +3,6 @@
 ## Objective
 To understand how Endpoint Detection and Response (EDR) solutions collect telemetry, detect malicious behaviour, and assist SOC analysts in investigating endpoint-based attacks.
 
----
 
 ## Key Concepts Learned
 - What an EDR agent is and how it collects endpoint telemetry  
@@ -15,11 +14,10 @@ To understand how Endpoint Detection and Response (EDR) solutions collect teleme
 - How alerts are prioritised using severity levels  
 - How analysts correlate process, file, and network activity  
 
----
 
 ## Environment Overview
 
-![EDR Dashboard](screenshots/edr-dashboard.png)
+![EDR Dashboard](edr-dashboard.png)
 
 **Platform:** EDR Web Application  
 
@@ -29,11 +27,9 @@ To understand how Endpoint Detection and Response (EDR) solutions collect teleme
 
 **Focus:** Endpoint behaviour rather than signature-based detection.
 
----
-
+![Alerts Overview](alerts-overview.png)
 ## Alerts Observed
 
-![Alerts Overview](screenshots/alerts-high-medium.png)
 
 ### High Severity
 **Initial Access via Malicious Office Document**  
@@ -51,13 +47,12 @@ Indicates the attacker attempted to maintain access after reboot.
 
 ## Investigation Highlights
 
-![Suspicious Process](screenshots/suspicious-process.png)
+![Suspicious Process](suspicious-process.png)
 
 - A suspicious executable (`syncsvc.exe`) was observed running from a temporary user directory, which is uncommon for legitimate Windows services.
 - Network activity associated with this process suggested a possible **data exfiltration attempt**.
 
-![Threat Intelligence](screenshots/threat-intel.png)
-
+![Threat Intel](threat-intel.png)
 - Another executable (`UpdateAgent.exe`) was analysed using **Threat Intelligence** and classified as malicious.
 
 
